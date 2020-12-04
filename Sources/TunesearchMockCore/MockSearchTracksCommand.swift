@@ -1,15 +1,8 @@
-//
-//  File.swift
-//  
-//
-//  Created by Prof. Dr. Nunkesser, Robin on 29.10.20.
-//
-
 import Foundation
 import TunesearchCorePorts
 
-class MockSearchTracksCommand : SearchTracksCommand {
-    func execute(inDTO: SearchTracksDTO, completion: @escaping (Result<[CollectionEntity], Error>) -> Void) {
+public class MockSearchTracksCommand : SearchTracksCommand {
+    public func execute(inDTO: SearchTracksDTO, completion: @escaping (Result<[CollectionEntity], Error>) -> Void) {
         completion(Result.success(mock))
     }
     
