@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ExplicitArchitecture",
+        "repositoryURL": "https://github.com/RobinNunkesser/explicitarchitecture-spm.git",
+        "state": {
+          "branch": null,
+          "revision": "22f239b1f42c9bb797341584aca94cc31484619a",
+          "version": "0.0.1"
+        }
+      },
+      {
+        "package": "TunesearchCorePorts",
+        "repositoryURL": "https://github.com/RobinNunkesser/explicitarchitecture-tunesearch-core-ports-spm.git",
+        "state": {
+          "branch": null,
+          "revision": "559ff754efb44c28d49d358623cd1ceaa10f2397",
+          "version": "0.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
