@@ -13,7 +13,7 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(name: "TunesearchCorePorts", url: "https://github.com/RobinNunkesser/explicitarchitecture-tunesearch-core-ports-spm.git", from: "0.0.1")
+        .package(name: "TunesearchCorePorts", url: "https://github.com/RobinNunkesser/explicitarchitecture-tunesearch-core-ports-spm.git", from: "0.0.2")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.

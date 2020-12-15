@@ -2,7 +2,7 @@ import Foundation
 import TunesearchCorePorts
 
 public class MockSearchTracksCommand : SearchTracksCommand {
-    public func execute(inDTO: SearchTracksDTO, completion: @escaping (Result<[CollectionEntity], Error>) -> Void) {
+    public func execute(inDTO: SearchTerm, completion: @escaping (Result<[TrackCollection], Error>) -> Void) {
         completion(Result.success(mock))
     }
     
