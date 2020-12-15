@@ -18,16 +18,16 @@ class TrackEntity: Track, Comparable {
         self.artworkUrl = artworkUrl
     }
     
-    var artistName: String
-    var collectionName: String
+    var artistName: String?
+    var collectionName: String?
     var trackName: String?
     var trackNumber: Int?
     var discNumber: Int?
-    var artworkUrl: URL
+    var artworkUrl: URL?
     
     public static func < (lhs: TrackEntity, rhs: TrackEntity) -> Bool {
         if lhs.collectionName != rhs.collectionName {
-            return lhs.collectionName < rhs.collectionName
+            return lhs.collectionName ?? "" < rhs.collectionName ?? ""
         }
         if lhs.discNumber != rhs.discNumber {
             return lhs.discNumber ?? 0 < rhs.discNumber ?? 0
